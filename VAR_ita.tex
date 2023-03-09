@@ -1,0 +1,589 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,pdftex]{geometry}
+\usepackage{longtable}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+VAR system, lag order 4\\
+OLS estimates, observations 2001:1--2020:4 ($T=80$)
+\end{center}
+\noindent
+Log-likelihood = $-$2096.84\par
+\noindent
+Determinant of covariance matrix = 6.85843\textrm{e+17}\par
+\noindent
+AIC $= 54.4209$ \par
+\noindent
+BIC $= 56.8030$ \par
+\noindent
+HQC $= 55.3760$ \par
+\noindent
+Portmanteau test: LB(20) = 249.944, df = 256 [0.5949]\par
+\begin{center}
+
+Equation 1: M\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  $-$0&490375 &
+    0&410005 &
+      $-$1&196 &
+        0&2364 \\
+M$_{t-1}$ &
+  1&35041 &
+    0&122799 &
+      11&00 &
+        0&0000 \\
+M$_{t-2}$ &
+  $-$0&573970 &
+    0&208683 &
+      $-$2&750 &
+        0&0079 \\
+M$_{t-3}$ &
+  0&327473 &
+    0&210301 &
+      1&557 &
+        0&1247 \\
+M$_{t-4}$ &
+  $-$0&108388 &
+    0&129800 &
+      $-$0&8350 &
+        0&4070 \\
+ES$_{t-1}$ &
+  3&82975\textrm{e--11} &
+    1&15369\textrm{e--11} &
+      3&320 &
+        0&0015 \\
+ES$_{t-2}$ &
+  $-$3&75909\textrm{e--12} &
+    1&42443\textrm{e--11} &
+      $-$0&2639 &
+        0&7928 \\
+ES$_{t-3}$ &
+  $-$2&58347\textrm{e--11} &
+    1&98891\textrm{e--11} &
+      $-$1&299 &
+        0&1989 \\
+ES$_{t-4}$ &
+  $-$7&83681\textrm{e--12} &
+    1&64313\textrm{e--11} &
+      $-$0&4769 &
+        0&6351 \\
+IS$_{t-1}$ &
+  0&156163 &
+    0&0559800 &
+      2&790 &
+        0&0071 \\
+IS$_{t-2}$ &
+  0&0229391 &
+    0&0583711 &
+      0&3930 &
+        0&6957 \\
+IS$_{t-3}$ &
+  $-$0&0588600 &
+    0&0735914 &
+      $-$0&7998 &
+        0&4270 \\
+IS$_{t-4}$ &
+  $-$0&249425 &
+    0&0720739 &
+      $-$3&461 &
+        0&0010 \\
+DD$_{t-1}$ &
+  $-$0&164849 &
+    0&0504207 &
+      $-$3&269 &
+        0&0018 \\
+DD$_{t-2}$ &
+  $-$0&125301 &
+    0&0593378 &
+      $-$2&112 &
+        0&0389 \\
+DD$_{t-3}$ &
+  0&0174120 &
+    0&0724205 &
+      0&2404 &
+        0&8108 \\
+DD$_{t-4}$ &
+  0&0317160 &
+    0&0178301 &
+      1&779 &
+        0&0803 \\
+S1 &
+  $-$0&0868795 &
+    0&0800003 &
+      $-$1&086 &
+        0&2818 \\
+S2 &
+  0&108034 &
+    0&0804984 &
+      1&342 &
+        0&1846 \\
+S3 &
+  $-$0&00393910 &
+    0&0825631 &
+      $-$0&04771 &
+        0&9621 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  1.445696 & S.D. dependent var &  1.706450 \\
+Sum squared resid &  3.227531 & S.E. of regression &  0.231931 \\
+$R^2$ &  0.985970 & Adjusted $R^2$ &  0.981527 \\
+$F(19, 60)$ &  221.9245 & P-value($F$) &  2.36\textrm{e--48} \\
+$\hat{\rho}$ &  0.102859 & Durbin--Watson &  1.781855 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of M & $F(4, 60) = 684.039$ & [0.0000]\\
+All lags of ES & $F(4, 60) = 3.31611$ & [0.0161]\\
+All lags of IS & $F(4, 60) = 5.28019$ & [0.0010]\\
+All lags of DD & $F(4, 60) = 4.03438$ & [0.0058]\\
+All vars, lag 4 & $F(4, 60) = 3.07592$ & [0.0227]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\begin{center}
+
+Equation 2: ES\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  4&40951\textrm{e+10} &
+    2&26783\textrm{e+10} &
+      1&944 &
+        0&0565 \\
+M$_{t-1}$ &
+  $-$6&60811\textrm{e+08} &
+    6&79229\textrm{e+09} &
+      $-$0&09729 &
+        0&9228 \\
+M$_{t-2}$ &
+  $-$6&29500\textrm{e+09} &
+    1&15427\textrm{e+10} &
+      $-$0&5454 &
+        0&5875 \\
+M$_{t-3}$ &
+  4&63857\textrm{e+09} &
+    1&16322\textrm{e+10} &
+      0&3988 &
+        0&6915 \\
+M$_{t-4}$ &
+  1&21210\textrm{e+09} &
+    7&17955\textrm{e+09} &
+      0&1688 &
+        0&8665 \\
+ES$_{t-1}$ &
+  $-$0&153835 &
+    0&638133 &
+      $-$0&2411 &
+        0&8103 \\
+ES$_{t-2}$ &
+  5&14467 &
+    0&787886 &
+      6&530 &
+        0&0000 \\
+ES$_{t-3}$ &
+  $-$6&53811 &
+    1&10011 &
+      $-$5&943 &
+        0&0000 \\
+ES$_{t-4}$ &
+  2&45804 &
+    0&908853 &
+      2&705 &
+        0&0089 \\
+IS$_{t-1}$ &
+  $-$2&00961\textrm{e+09} &
+    3&09638\textrm{e+09} &
+      $-$0&6490 &
+        0&5188 \\
+IS$_{t-2}$ &
+  6&28437\textrm{e+09} &
+    3&22864\textrm{e+09} &
+      1&946 &
+        0&0563 \\
+IS$_{t-3}$ &
+  $-$2&35315\textrm{e+09} &
+    4&07051\textrm{e+09} &
+      $-$0&5781 &
+        0&5654 \\
+IS$_{t-4}$ &
+  $-$8&87199\textrm{e+09} &
+    3&98657\textrm{e+09} &
+      $-$2&225 &
+        0&0298 \\
+DD$_{t-1}$ &
+  5&85241\textrm{e+09} &
+    2&78888\textrm{e+09} &
+      2&098 &
+        0&0401 \\
+DD$_{t-2}$ &
+  $-$1&78099\textrm{e+10} &
+    3&28211\textrm{e+09} &
+      $-$5&426 &
+        0&0000 \\
+DD$_{t-3}$ &
+  1&29539\textrm{e+10} &
+    4&00574\textrm{e+09} &
+      3&234 &
+        0&0020 \\
+DD$_{t-4}$ &
+  1&29460\textrm{e+09} &
+    9&86220\textrm{e+08} &
+      1&313 &
+        0&1943 \\
+S1 &
+  $-$1&79049\textrm{e+09} &
+    4&42500\textrm{e+09} &
+      $-$0&4046 &
+        0&6872 \\
+S2 &
+  $-$1&52904\textrm{e+09} &
+    4&45255\textrm{e+09} &
+      $-$0&3434 &
+        0&7325 \\
+S3 &
+  3&81432\textrm{e+08} &
+    4&56675\textrm{e+09} &
+      0&08352 &
+        0&9337 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  4.84\textrm{e+11} & S.D. dependent var &  4.38\textrm{e+10} \\
+Sum squared resid &  9.87\textrm{e+21} & S.E. of regression &  1.28\textrm{e+10} \\
+$R^2$ &  0.934812 & Adjusted $R^2$ &  0.914169 \\
+$F(19, 60)$ &  45.28491 & P-value($F$) &  1.57\textrm{e--28} \\
+$\hat{\rho}$ & $-$0.018752 & Durbin--Watson &  2.020926 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of M & $F(4, 60) = 0.618019$ & [0.6514]\\
+All lags of ES & $F(4, 60) = 115.066$ & [0.0000]\\
+All lags of IS & $F(4, 60) = 2.61241$ & [0.0441]\\
+All lags of DD & $F(4, 60) = 14.4629$ & [0.0000]\\
+All vars, lag 4 & $F(4, 60) = 3.77757$ & [0.0083]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\begin{center}
+
+Equation 3: IS\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  2&86040 &
+    2&78459 &
+      1&027 &
+        0&3084 \\
+M$_{t-1}$ &
+  $-$0&595345 &
+    0&834001 &
+      $-$0&7138 &
+        0&4781 \\
+M$_{t-2}$ &
+  0&160489 &
+    1&41729 &
+      0&1132 &
+        0&9102 \\
+M$_{t-3}$ &
+  0&283305 &
+    1&42828 &
+      0&1984 &
+        0&8434 \\
+M$_{t-4}$ &
+  0&184651 &
+    0&881552 &
+      0&2095 &
+        0&8348 \\
+ES$_{t-1}$ &
+  $-$8&20806\textrm{e--11} &
+    7&83541\textrm{e--11} &
+      $-$1&048 &
+        0&2990 \\
+ES$_{t-2}$ &
+  6&38446\textrm{e--10} &
+    9&67418\textrm{e--11} &
+      6&599 &
+        0&0000 \\
+ES$_{t-3}$ &
+  $-$8&61430\textrm{e--10} &
+    1&35079\textrm{e--10} &
+      $-$6&377 &
+        0&0000 \\
+ES$_{t-4}$ &
+  2&98036\textrm{e--10} &
+    1&11595\textrm{e--10} &
+      2&671 &
+        0&0097 \\
+IS$_{t-1}$ &
+  $-$0&490137 &
+    0&380194 &
+      $-$1&289 &
+        0&2023 \\
+IS$_{t-2}$ &
+  0&618581 &
+    0&396433 &
+      1&560 &
+        0&1239 \\
+IS$_{t-3}$ &
+  $-$0&402157 &
+    0&499803 &
+      $-$0&8046 &
+        0&4242 \\
+IS$_{t-4}$ &
+  $-$0&916907 &
+    0&489497 &
+      $-$1&873 &
+        0&0659 \\
+DD$_{t-1}$ &
+  0&500970 &
+    0&342437 &
+      1&463 &
+        0&1487 \\
+DD$_{t-2}$ &
+  $-$2&37683 &
+    0&402998 &
+      $-$5&898 &
+        0&0000 \\
+DD$_{t-3}$ &
+  1&52223 &
+    0&491851 &
+      3&095 &
+        0&0030 \\
+DD$_{t-4}$ &
+  0&235916 &
+    0&121095 &
+      1&948 &
+        0&0561 \\
+S1 &
+  $-$0&104164 &
+    0&543330 &
+      $-$0&1917 &
+        0&8486 \\
+S2 &
+  $-$0&130729 &
+    0&546712 &
+      $-$0&2391 &
+        0&8118 \\
+S3 &
+  0&342692 &
+    0&560735 &
+      0&6111 &
+        0&5434 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var & $-$0.029991 & S.D. dependent var &  2.317872 \\
+Sum squared resid &  148.8724 & S.E. of regression &  1.575185 \\
+$R^2$ &  0.649242 & Adjusted $R^2$ &  0.538168 \\
+$F(19, 60)$ &  5.845151 & P-value($F$) &  6.85\textrm{e--08} \\
+$\hat{\rho}$ & $-$0.044873 & Durbin--Watson &  2.077564 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of M & $F(4, 60) = 0.315367$ & [0.8666]\\
+All lags of ES & $F(4, 60) = 17.5114$ & [0.0000]\\
+All lags of IS & $F(4, 60) = 2.19118$ & [0.0807]\\
+All lags of DD & $F(4, 60) = 15.5093$ & [0.0000]\\
+All vars, lag 4 & $F(4, 60) = 3.92375$ & [0.0068]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\begin{center}
+
+Equation 4: DD\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  11&4245 &
+    6&95647 &
+      1&642 &
+        0&1058 \\
+M$_{t-1}$ &
+  $-$0&950865 &
+    2&08350 &
+      $-$0&4564 &
+        0&6498 \\
+M$_{t-2}$ &
+  $-$0&295087 &
+    3&54067 &
+      $-$0&08334 &
+        0&9339 \\
+M$_{t-3}$ &
+  0&501777 &
+    3&56812 &
+      0&1406 &
+        0&8886 \\
+M$_{t-4}$ &
+  0&604459 &
+    2&20229 &
+      0&2745 &
+        0&7847 \\
+ES$_{t-1}$ &
+  $-$2&69844\textrm{e--10} &
+    1&95744\textrm{e--10} &
+      $-$1&379 &
+        0&1732 \\
+ES$_{t-2}$ &
+  1&60269\textrm{e--09} &
+    2&41681\textrm{e--10} &
+      6&631 &
+        0&0000 \\
+ES$_{t-3}$ &
+  $-$2&16216\textrm{e--09} &
+    3&37454\textrm{e--10} &
+      $-$6&407 &
+        0&0000 \\
+ES$_{t-4}$ &
+  8&05212\textrm{e--10} &
+    2&78786\textrm{e--10} &
+      2&888 &
+        0&0054 \\
+IS$_{t-1}$ &
+  $-$0&940871 &
+    0&949801 &
+      $-$0&9906 &
+        0&3259 \\
+IS$_{t-2}$ &
+  1&76872 &
+    0&990369 &
+      1&786 &
+        0&0792 \\
+IS$_{t-3}$ &
+  $-$0&955277 &
+    1&24861 &
+      $-$0&7651 &
+        0&4472 \\
+IS$_{t-4}$ &
+  $-$2&69313 &
+    1&22286 &
+      $-$2&202 &
+        0&0315 \\
+DD$_{t-1}$ &
+  1&50674 &
+    0&855477 &
+      1&761 &
+        0&0833 \\
+DD$_{t-2}$ &
+  $-$5&84741 &
+    1&00677 &
+      $-$5&808 &
+        0&0000 \\
+DD$_{t-3}$ &
+  4&16900 &
+    1&22874 &
+      3&393 &
+        0&0012 \\
+DD$_{t-4}$ &
+  0&486574 &
+    0&302519 &
+      1&608 &
+        0&1130 \\
+S1 &
+  $-$0&654762 &
+    1&35735 &
+      $-$0&4824 &
+        0&6313 \\
+S2 &
+  $-$0&650430 &
+    1&36580 &
+      $-$0&4762 &
+        0&6356 \\
+S3 &
+  0&338399 &
+    1&40083 &
+      0&2416 &
+        0&8099 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  0.253932 & S.D. dependent var &  5.727841 \\
+Sum squared resid &  929.1147 & S.E. of regression &  3.935130 \\
+$R^2$ &  0.641524 & Adjusted $R^2$ &  0.528006 \\
+$F(19, 60)$ &  5.651322 & P-value($F$) &  1.20\textrm{e--07} \\
+$\hat{\rho}$ & $-$0.024264 & Durbin--Watson &  2.037401 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of M & $F(4, 60) = 0.300616$ & [0.8764]\\
+All lags of ES & $F(4, 60) = 18.2727$ & [0.0000]\\
+All lags of IS & $F(4, 60) = 2.59297$ & [0.0454]\\
+All lags of DD & $F(4, 60) = 15.7938$ & [0.0000]\\
+All vars, lag 4 & $F(4, 60) = 4.29073$ & [0.0040]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+
+\noindent For the system as a whole ---\par
+Null hypothesis: the longest lag is 3\par
+Alternative hypothesis: the longest lag is 4\par
+Likelihood ratio test: $\chi^2_{16}$ = 39.998 [0.0008]\par
+
+
+\end{document}
