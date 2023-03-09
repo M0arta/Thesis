@@ -1,0 +1,16 @@
+VAR system, maximum lag order 8
+
+The asterisks below indicate the best (that is, minimized) values
+of the respective information criteria, AIC = Akaike criterion,
+BIC = Schwarz Bayesian criterion and HQC = Hannan-Quinn criterion.
+
+lags        loglik    p(LR)       AIC          BIC          HQC
+
+   1   -2242.99796            59.868367    60.849729*   60.260567*
+   2   -2227.34427  0.01229   59.877481    61.349523    60.465780 
+   3   -2201.13124  0.00001   59.608717    61.571440    60.393116 
+   4   -2186.52817  0.02258   59.645478    62.098882    60.625977 
+   5   -2172.08794  0.02475   59.686525    62.630609    60.863123 
+   6   -2157.12468  0.01839   59.713807    63.148572    61.086506 
+   7   -2135.57321  0.00027   59.567716    63.493162    61.136514 
+   8   -2119.23274  0.00814   59.558756*   63.974883    61.323654 
